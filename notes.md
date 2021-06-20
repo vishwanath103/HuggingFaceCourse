@@ -1,0 +1,45 @@
+## List of tasks
+- [] Higging Face Course
+- [] Attention is all you need - Yannic YT Video
+- [] Attention is all you need - Paper
+
+- pipelines
+    - Are objects that abstract most of the ML tasks
+    - pipeline() gives an object encapsulating all other pipeline
+    - There are other task specific pipelines
+- The 3 main tasks, when a text is passed to a pipeline
+    - Text is preprocessed into a format the model can understand
+    - Preprocessed inputs are passed to the model
+    - Predictions of the model are postprocessed so that you can make sense of them
+- Transformers are language models
+    - Trained on large amounts of raw text in a self-supervised fashion
+- Transfer Learning
+    - Using a pretrained model and fine tuning it for a specific task
+    - The pretrained model helps by transfering its knowledge but it also transfers the bias it may contain
+- Transformer Architecture
+    - Two primary blocks: Encoder, Decoder
+    - Independent parts depedning on the task
+        - Encoder only models: sentence classification, named entity recognition
+        - Decoder only models: generative tasks such as text generation
+        - Encoder-Decoder models or sequence-sequence models: translation or summarization
+- Attention Layers
+    - A word by itself has a meaning, but that meaning is deeply affected by the context, which can be any other before or after
+- Encoder models
+    - Famously used encoder only model is BERT
+    - Referred as auto-encoder models
+    - Unsupervised learning technique in which we leverage neural networks for the task of representation learning
+    - Compressed knowledge representation of the input
+    - A bottleneck(hidden layer) constrains the amount of information that can traverse the full network, forcing a learned compression of the input data
+    - autoencoders are capable of learning non-linear manifolds
+    - Sparse Autoencoders: Sensitize individual hidden layer nodes toward specific attributes of the input data
+    - Denoising autoencoders: Slightly corrupt the input data but still maintain the uncorruspted as the target output
+    - Contractive autoencoders: 
+- Decoder models
+    - Auto-regressive models
+    - At each stage, for a given word the attention layers can only access the words positioned before it in the sentence
+    - Suited best for text generation
+    - Famous models: GPT, GPT2
+- Sequence to Sequence Model
+    - Aims to map a fixed length input with a fixed length output where the length of the input and output may deffer
+    - Model consists of 3 parts: encoder, intermediate vector and decoder
+

@@ -1,8 +1,9 @@
 ## List of tasks
-- [] Higging Face Course
-- [] Attention is all you need - Yannic YT Video
-- [] Attention is all you need - Paper
+- [ ] Higging Face Course
+- [ ] Attention is all you need - Yannic YT Video
+- [ ] Attention is all you need - Paper
 
+## Notes
 - pipelines
     - Are objects that abstract most of the ML tasks
     - pipeline() gives an object encapsulating all other pipeline
